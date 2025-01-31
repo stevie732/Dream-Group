@@ -79,6 +79,27 @@ body {
   animation: fadeInUp 1s ease;
 }
 
+.hero .btn-primary {
+    position: relative;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, var(--secondary), var(--primary));
+}
+
+.hero .btn-primary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
 /* Service Cards */
 .service-card {
   position: relative;
